@@ -67,3 +67,51 @@ ul.social-media {
     right: 0;
     margin: 3%;
 }
+
+
+/* DEVELOPMENT ICONS FLOATING */
+
+._float_icons {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    pointer-events: none;
+}
+
+._icon {
+    width: 5%;
+    position: absolute;
+}
+
+._mouse {
+    left: 60%;
+    top: 50%;
+    transform: rotate(25deg);
+}
+
+._coding {
+    width: 10%;
+    left: 22%;
+    top: 48%;
+}
+
+._gamepad {
+    top: 25%;
+    width: 7%;
+    left: 40%;
+    transform: rotate(-31deg);
+}
+
+._icon._pen {
+    left: 75%;
+    top: 25%;
+    width: 9%;
+    transform: rotate(-55deg);
+}
+
+
+._smartphone {
+    left: 32%;
+    top: 40%;
+    transform: rotate(15deg);
+}
