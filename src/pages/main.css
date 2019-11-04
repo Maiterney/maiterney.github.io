@@ -115,3 +115,88 @@ ul.social-media {
     top: 40%;
     transform: rotate(15deg);
 }
+
+/* Text about */
+
+
+section.about {
+    width: 100%;
+    display: flex;
+    padding: 8em 0 8em 0;
+}
+
+.about_image {
+    position: relative;
+    width: 50%;
+    float: left;
+    align-content: center;
+    justify-content: center;
+}
+
+.about_img img {
+    width: 80%;
+    margin: auto;
+    border-radius: 8em;
+}
+
+.about_text {
+    width: 50%;
+    float: left;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.about_text p {
+    line-height: 25px;
+    margin-top: 18px;
+}
+
+/* Tecnologies */
+
+section.tecnologies {
+    width: 100%;
+    display: flex;
+    padding: 8em 0 8em 0;
+}
+
+.tecnologies_image {
+    position: relative;
+    width: 50%;
+    float: left;
+    align-content: center;
+    justify-content: center;
+}
+
+.tecnologies_img img {
+    width: 80%;
+    margin: auto;
+    border-radius: 8em;
+}
+
+.tecnologies_text {
+    width: 50%;
+    float: left;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.tecnologies_text p {
+    line-height: 25px;
+    margin-top: 18px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0.50em 0.50em;
+}
