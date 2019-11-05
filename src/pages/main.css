@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Squada+One&display=swap');
+
+
+body{
+    font-family: 'Squada One', cursive;
+    overflow-x: hidden;
+}
+
+
 nav {
     height: 100vh;
     background: #8BC34A;
@@ -19,9 +28,29 @@ a {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    position: relative;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 
+.chartjs-render-monitor {
+    width: 101vw !important;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    left: -.59em;
+    bottom: -0.55em;
+    opacity: 0.45;
+}
+
+canvas {
+    /* margin: -50px -5px; */
+    width: 100vw;
+}
+
+/*
 .logo a img:hover {
     transition: all .4s;
     transform:scale(1.2);
@@ -29,7 +58,7 @@ a {
     -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.25);
     box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.25);
 }
-
+*/
 
 ul {
     list-style: none;
@@ -43,6 +72,8 @@ ul li {
 ul.menu li p, ul.social-media li a i {
     color: white;
     transition: all .4s;
+    z-index: 99;
+    position: relative;
 }
 
 
@@ -57,7 +88,11 @@ ul.social-media li a i:hover {
 }
 
 
-ul.social-media li i {
+.menu{
+    font-family: 'Squada One', cursive;
+}
+
+ul.social-media li i, .menu {
     color: white;
 }
 
@@ -68,51 +103,79 @@ ul.social-media {
     margin: 3%;
 }
 
+._career{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+._ghost{
+    font-size: 350%;
+    transform:rotate(-15deg);
+    z-index: 0;
+    position: relative;
+    opacity: 0.3;
+    pointer-events: none;
+    margin-top: -2em;
+}
+
+._negative_rotate{
+    opacity: 0.2;
+    font-size: 270%;
+    transform:rotate(15deg);
+}
 
 /* DEVELOPMENT ICONS FLOATING */
 
 ._float_icons {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     position: absolute;
     pointer-events: none;
 }
 
 ._icon {
-    width: 5%;
+    width: 10%;
     position: absolute;
+    z-index: 1;
+    animation: wobble 6s ease-in-out infinite;
 }
 
 ._mouse {
     left: 60%;
     top: 50%;
     transform: rotate(25deg);
+    animation: wobble 4s ease-in-out infinite;
+    z-index:3;
 }
 
 ._coding {
-    width: 10%;
-    left: 22%;
-    top: 48%;
+    width: 20%;
+    left: 10%;
+    top: 45%;
+    animation: wobble 9s ease-in-out infinite;
 }
 
 ._gamepad {
-    top: 25%;
-    width: 7%;
-    left: 40%;
+    top: -2em;
+    width: 15%;
+    left: 30%;
     transform: rotate(-31deg);
+    animation: wobble 12s ease-in-out infinite;
 }
 
-._icon._pen {
+._pen {
     left: 75%;
     top: 25%;
     width: 9%;
     transform: rotate(-55deg);
+    animation: wobble 10s ease-in-out infinite;
 }
 
 
 ._smartphone {
-    left: 32%;
-    top: 40%;
+    left: 65%;
+    top: 5%;
     transform: rotate(15deg);
 }
 
@@ -200,3 +263,57 @@ footer li {
     display: inline-block;
     padding: 0.50em 0.50em;
 }
+    
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    ul.social-media {
+        right: 5%;
+    }
+}
+
+
+@media screen and (min-width: 211px) and (max-width: 768px) {
+    ._ghost{
+        position: absolute;
+        right: calc(50% - 40vw);
+        top: 50%;
+    }
+
+    ._float_icons {
+        width: 100vw;
+        height: 60vh;
+    }
+}
+
+
+/* ANIMATES */
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+@keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }
+  
