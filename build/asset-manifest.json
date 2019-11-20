@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.042cab39.chunk.css",
+    "main.js": "/static/js/main.0639a827.chunk.js",
+    "main.js.map": "/static/js/main.0639a827.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.5a671027.js",
+    "runtime~main.js.map": "/static/js/runtime~main.5a671027.js.map",
+    "static/js/2.6eec4c8f.chunk.js": "/static/js/2.6eec4c8f.chunk.js",
+    "static/js/2.6eec4c8f.chunk.js.map": "/static/js/2.6eec4c8f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7be3e564167c330dd2106b86594dfabd.js": "/precache-manifest.7be3e564167c330dd2106b86594dfabd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.042cab39.chunk.css.map": "/static/css/main.042cab39.chunk.css.map",
+    "static/media/about_img.gif": "/static/media/about_img.5083e0a2.gif",
+    "static/media/coding.svg": "/static/media/coding.a384abd4.svg",
+    "static/media/gamepad.svg": "/static/media/gamepad.06f44316.svg",
+    "static/media/mouse.svg": "/static/media/mouse.d11f1926.svg",
+    "static/media/pen.svg": "/static/media/pen.e8e2a09f.svg",
+    "static/media/smartphone.svg": "/static/media/smartphone.532cc05c.svg",
+    "static/media/tecnologies.jpg": "/static/media/tecnologies.a1ffa5d9.jpg"
+  }
+}
